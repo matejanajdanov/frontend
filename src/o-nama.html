@@ -11,7 +11,7 @@
     <header
       class="text-gray-600 body-font sticky top-0 z-10 bg-white"
       style="
-        box-shadow: rgba(243, 168, 28, 0.25) 0px 20px 40px -20px,
+        box-shadow: rgb(50 50 93 / 25%) 0px 20px 40px -20px,
           rgb(0 0 0 / 10%) 0px 20px 20px -30px;
       "
     >
@@ -33,11 +33,6 @@
             >Usluge</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
-            href="o-nama.html"
-            >O nama</a
-          >
-          <a
             class="pl-6 py-7 hover:text-gray-900 font-medium"
             href="kontakt.html"
             >Kontakt</a
@@ -47,45 +42,58 @@
     </header>
     <!-- MAIN -->
     <main>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-10 mx-auto">
-          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-            <div class="mb-10 px-4">
-              <div class="rounded-lg h-80 overflow-hidden">
-                <img
-                  alt="content"
-                  class="object-cover object-center h-full w-full drop-shadow-lg"
-                  src="./images/pexels-karolina-grabowska-4239031.jpg"
-                />
-              </div>
+      <section class="text-white body-font">
+        <div class="px-5 mx-auto">
+          <div class="flex justify-center -mx-4 -mb-10 text-center">
+            <div
+              class="mb-10 header2 relative body-font bg-gradient-to-t from-secondary to-secondaryDark"
+            >
+              <img
+                src="./images/pexels-karolina-grabowska-4239031.jpg"
+                alt=""
+                class="w-full h-full object-cover absolute mix-blend-soft-light"
+              />
               <h2
-                class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"
+                class="title-font text-4xl mt-6 mb-3 animate-[moveInUp_1s_ease-in-out]"
               >
                 Ko smo mi i sta Vam nudimo?
               </h2>
-              <p class="leading-relaxed text-base">
-                Top Glanc je mlada i veoma uspešna specijalizovana agencija koja
-                se bavi profesionalnim čišćenjem i tekućim održavanjem higijene
-                kancelarija, poslovnih objekata, hotela, restorana, hala,
-                banaka, sportskih centara, stambenih zgrada i višenamenskih
-                objekata. U našoj ponudi možete naći širok dijapazon usluga koje
-                obavljamo za Vas i vašu zajednicu. Pored održavanja i čišćenja
-                stambenog i poslovnog prostora Top Glanc agencija vrši usluge
-                čišćenja kako unutar vaših zajedničkih prostorija tako i
-                dvorišta. Koristimo opremu i dezinfekciona sredstva renomiranih
-                proizvođača kako bismo osigurali da se posao završi ispravno, na
-                vreme i da Vaš objekat bude savršeno čist. Iskustvo, kvalitet i
-                naša oprema je ono čime možemo da se pohvalimo, a na Vama je da
-                se u to i uverite. Kontaktirajte nas i uverite se u naš
-                kvalitet!
-              </p>
-              <a href="usluge.html">
-                <button
-                  class="flex mx-auto mt-6 text-white bg-secondary border-0 py-2 px-5 focus:outline-none hover:bg-secondaryDark rounded"
+              <div class="flex flex-col gap-10 mb-14 lg:mb-40">
+                <div class="flex">
+                  <p
+                    class="leading-relaxed text-xl px-2 md:px-10 xl:px-48 text-base md:w-2/3 animate-[moveInLeft_1s_ease-in-out]"
+                  >
+                    Top Glanc je mlada i veoma uspešna specijalizovana agencija
+                    koja se bavi profesionalnim čišćenjem i tekućim održavanjem
+                    higijene kancelarija, poslovnih objekata, hotela, restorana,
+                    hala, banaka, sportskih centara, stambenih zgrada i
+                    višenamenskih objekata. U našoj ponudi možete naći širok
+                    dijapazon usluga koje obavljamo za Vas i vašu zajednicu.
+                  </p>
+                </div>
+                <div class="flex md:justify-end">
+                  <p
+                    class="leading-relaxed text-xl px-2 md:px-10 xl:px-48 text-base md:w-2/3 animate-[moveInRight_1s_ease-in-out]"
+                  >
+                    Pored održavanja i čišćenja stambenog i poslovnog prostora
+                    Top Glanc agencija vrši usluge čišćenja kako unutar vaših
+                    zajedničkih prostorija tako i dvorišta. Koristimo opremu i
+                    dezinfekciona sredstva renomiranih proizvođača kako bismo
+                    osigurali da se posao završi ispravno, na vreme i da Vaš
+                    objekat bude savršeno čist. Iskustvo, kvalitet i naša oprema
+                    je ono čime možemo da se pohvalimo, a na Vama je da se u to
+                    i uverite. Kontaktirajte nas i uverite se u naš kvalitet!
+                  </p>
+                </div>
+              </div>
+              <button>
+                <a
+                  href="usluge.html"
+                  class="flex items-end mx-auto text-white bg-gray-400 border-0 py-2 px-5 focus:outline-none hover:bg-gray-600 rounded animate-bounce"
                 >
                   Pogledaj naše usluge
-                </button>
-              </a>
+                </a>
+              </button>
             </div>
           </div>
         </div>
