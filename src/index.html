@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Početna</title>
+    <meta
+      name="description"
+      content="Naše usluge obuhvataju redovno i periodično čišćenje i
+    održavanje higijene poslovnih prostora, hotela, restorana,
+    fitness centara, stambenih zgrada i drugih objekata, održavanje
+    zelenih površina kao i zimsko održavanje na teritoriji Beograda."
+    />
+    <title>Top glanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link href="../dist/output.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header
@@ -16,86 +30,218 @@
       "
     >
       <div
-        class="container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        style="height: 80px"
+        class="container flex flex-wrap justify-between items-center h-full"
       >
-        <div class="w-20">
-          <img src="images/logo.svg" />
+        <div>
+          <a href="index.html"
+            ><img src="assets/images/logo.svg" alt="top glanc logo"
+          /></a>
         </div>
+
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          class="hidden md:flex md:ml-auto items-center text-base justify-center"
         >
-          <a class="px-6 py-7 hover:text-gray-900 font-medium" href="index.html"
+          <a
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
+            href="index.html"
             >Početna</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="o-nama.html"
             >O nama</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="usluge.html"
             >Usluge</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="kontakt.html"
             >Kontakt</a
           >
         </nav>
+
+        <button
+          id="navigation-toggler"
+          class="menu md:hidden"
+          onclick="toggleNavigation(this)"
+          aria-label="prikazi navigaciju"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
       </div>
+
+      <nav
+        style="transition: 0.5s"
+        id="mobile-navigation"
+        class="max-h-0 overflow-hidden flex flex-col items-center text-base justify-center"
+      >
+        <a class="my-4 hover:text-gray-900 font-medium" href="index.html"
+          >Početna</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="o-nama.html"
+          >O nama</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="usluge.html"
+          >Usluge</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="kontakt.html"
+          >Kontakt</a
+        >
+      </nav>
     </header>
+
     <!-- MAIN -->
     <main>
       <section class="flex justify-center items-center">
         <div
-          class="header relative body-font bg-gradient-to-t from-primaryDark to-primary"
+          class="header relative body-font bg-gradient-to-tr from-primary/60 flex items-center justify-center w-full"
         >
           <img
-            src="./images/hero.jpg"
+            src="assets/images/hero.jpg"
             class="w-full h-full object-cover absolute top-0 left-0 mix-blend-overlay"
           />
-          <div class="flex flex-col text-center mt-40 relative">
-            <h1
-              class="flex body-font text-2xl md:text-3xl text-white px-10 lg:px-48 mb-10 sm:mb-16 animate-[moveInLeft_1s_ease-in-out]"
-            >
-              Naše usluge obuhvataju redovno i periodično čišćenje i održavanje
-              higijene poslovnih prostora, hotela, restorana, fitness centara,
-              stambenih zgrada i drugih objekata, održavanje zelenih površina
-              kao i zimsko održavanje na teritoriji Beograda.
-            </h1>
-
+          <div class="flex flex-col text-left relative container">
             <div>
+              <h1
+                class="animate-[moveInLeft_1s_ease-in-out] text-3xl font-medium md:text-6xl mb-6 text-white uppercase"
+              >
+                Top Glanc
+              </h1>
+              <div
+                class="w-20 h-[3px] bg-white inline-block rounded mb-4 animate-[moveInLeft_1s_ease-in-out]"
+              ></div>
+              <h2
+                class="flex body-font text-xl mb-12 md:text-2xl text-white animate-[moveInLeft_1s_ease-in-out] max-w-4xl"
+                style="text-shadow: 0 0 5px black"
+              >
+                Naše usluge obuhvataju redovno i periodično čišćenje i
+                održavanje higijene poslovnih prostora, hotela, restorana,
+                fitness centara, stambenih zgrada i drugih objekata, održavanje
+                zelenih površina kao i zimsko održavanje na teritoriji Beograda.
+              </h2>
               <a
-                href="./kontakt.html"
-                class="bg-tertiaryDark text-white inline-block py-2 px-5 hover:bg-tertiaryDark rounded"
-                >Kontaktiraj nas</a
+                class="text-white px-10 py-4 rounded bg-secondaryDark inline-block animate-[moveInLeft_1s_ease-in-out]"
+                href="/usluge.html"
+                >Nase usluge</a
               >
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <!-- FOOTER -->
-    <footer class="text-gray-600 body-font">
-      <div
-        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
-      >
-        <div class="w-20">
-          <img src="images/logo.svg" />
-        </div>
-        <p
-          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      <section class="container py-10 md:py-16">
+        <div
+          class="flex md:flex-row flex-col gap-8 items-center mb-10 md:mb-20"
         >
-          © 2020 Tailblocks —
-          <a
-            href="https://twitter.com/knyttneve"
-            class="text-gray-600 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-            >@knyttneve</a
+          <div>
+            <h2 class="text-3xl mb-6">O nama</h2>
+            <p class="mb-10">
+              Top Glanc je mlada i veoma uspešna specijalizovana agencija koja
+              se bavi profesionalnim čišćenjem i tekućim održavanjem higijene
+              kancelarija, poslovnih objekata, hotela, restorana, hala, banaka,
+              sportskih centara, stambenih zgrada i višenamenskih objekata.
+            </p>
+            <a
+              class="text-white px-8 py-3 rounded bg-secondaryDark inline-block"
+              href="/o-nama.html"
+              >Vise o nama</a
+            >
+          </div>
+          <img
+            src="assets/images/pexels-karolina-grabowska-4239031.jpg"
+            alt="o nama"
+            class="rounded-md md:max-w-[50%]"
+          />
+        </div>
+        <div class="flex md:flex-row flex-col-reverse gap-8 items-center">
+          <img
+            src="assets/images/5.jpg"
+            alt="usluge"
+            class="rounded-md md:max-w-[50%]"
+          />
+          <div>
+            <h2 class="text-3xl mb-6">Nase usluge</h2>
+            <p class="mb-10">
+              Na vaš upit naš predstavnik dolazi kod Vas i sa vama pravi
+              najbolji mogući plan higijenskog održavanja vašeg poslovnog
+              prostora i daje Vam ponudu u zavisnosti od obima posla i dinamike
+              dolaska.
+            </p>
+            <a
+              class="text-white px-8 py-3 rounded bg-secondaryDark inline-block"
+              href="/usluge.html"
+              >Sve usluge</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-primary py-9">
+          <div
+            class="container grid md:grid-cols-3 text-center text-white gap-6"
           >
-        </p>
+            <div>
+              <img
+                class="mb-3 mx-auto"
+                style="width: 50px"
+                src="assets/images/mail.svg"
+                alt="email"
+              />
+              <p>example@email.com</p>
+            </div>
+            <div>
+              <img
+                class="mb-3 mx-auto"
+                style="width: 50px"
+                src="assets/images/phone.svg"
+                alt="telefon"
+              />
+              <p>123-456-789</p>
+            </div>
+            <div>
+              <img
+                class="mb-3 mx-auto"
+                style="width: 50px"
+                src="assets/images/location.svg"
+                alt="lokacija"
+              />
+              <p class="text-2xl"></p>
+              <p>Pošta 11050, Ustanička 182, Belgrade</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="text-gray-600 body-font"
+      style="
+        box-shadow: rgb(50 50 93 / 25%) 0px 20px 40px 15px,
+          rgb(0 0 0 / 10%) 0px 20px 20px -30px;
+      "
+    >
+      <div
+        class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a href="index.html"
+          ><img src="assets/images/logo.svg" alt="top glanc logo"
+        /></a>
+
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
         >
