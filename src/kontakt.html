@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Naše usluge obuhvataju redovno i periodično čišćenje i
+    održavanje higijene poslovnih prostora, hotela, restorana,
+    fitness centara, stambenih zgrada i drugih objekata, održavanje
+    zelenih površina kao i zimsko održavanje na teritoriji Beograda."
+    />
+    <title>Top glanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link href="../dist/output.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
   </head>
+
   <body>
     <header
       class="body-font sticky top-0 z-10 bg-white"
@@ -16,122 +31,176 @@
       "
     >
       <div
-        class="container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        style="height: 80px"
+        class="container flex flex-wrap justify-between items-center h-full"
       >
-        <div class="w-20">
-          <img src="assets/images/logo.svg" />
+        <div>
+          <a href="index.html"
+            ><img src="assets/images/logo.svg" alt="top glanc logo"
+          /></a>
         </div>
+
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          class="hidden md:flex md:ml-auto items-center text-base justify-center"
         >
-          <a class="px-6 py-7 hover:text-gray-900 font-medium" href="index.html"
+          <a
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
+            href="index.html"
             >Početna</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="o-nama.html"
             >O nama</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="usluge.html"
             >Usluge</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="kontakt.html"
             >Kontakt</a
           >
         </nav>
+
+        <button
+          id="navigation-toggler"
+          class="menu md:hidden"
+          onclick="toggleNavigation(this)"
+          aria-label="prikazi navigaciju"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
       </div>
+
+      <nav
+        style="transition: 0.5s"
+        id="mobile-navigation"
+        class="max-h-0 overflow-hidden flex flex-col items-center text-base justify-center"
+      >
+        <a class="my-4 hover:text-gray-900 font-medium" href="index.html"
+          >Početna</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="o-nama.html"
+          >O nama</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="usluge.html"
+          >Usluge</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="kontakt.html"
+          >Kontakt</a
+        >
+      </nav>
     </header>
-    <!-- MAIN SECTION -->
+
+    <!-- MAIN -->
     <main>
-      <section class="body-font relative">
-        <div class="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div
-            class="lg:w-1/2 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
-          >
-            <iframe
-              width="100%"
-              height="100%"
-              class="absolute inset-0"
-              frameborder="0"
-              title="map"
-              marginheight="0"
-              marginwidth="0"
-              scrolling="no"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.915858090559!2d20.51267390026368!3d44.78252070969043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7091437b94c9%3A0x96a09f69ce41eda!2z0J_QvtGI0YLQsCAxMTA1MCwgVXN0YW5pxI1rYSAxODIsIEJlb2dyYWQgMTEwNTA!5e0!3m2!1sen!2srs!4v1670172440787!5m2!1sen!2srs"
-              style="filter: grayscale(1) contrast(1.2) opacity(0.4)"
-            ></iframe>
-            <div
-              class="bg-white relative flex flex-nowrap py-6 rounded shadow-md w-full"
-            >
-              <div class="lg:w-1/2 px-6">
-                <h2
-                  class="title-font font-semibold text-gray-900 tracking-widest text-xs"
-                >
-                  ADRESA
-                </h2>
-                <p class="mt-1">Pošta 11050, Ustanička 182, Belgrade</p>
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5 sm:py-16 py-12 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-4xl text-2xl font-bold title-font mb-4">
+              Kontaktiraj nas
+            </h1>
+            <p class="lg:w-2/3 mx-auto text-xl">
+              Kontakitraj nas putem forme i mi ćemo se potruditi da vam
+              odgovorimo u sto kraćem roku
+            </p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-full sm:w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600"
+                    >Ime</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
               </div>
-              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                <h2
-                  class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              <div class="p-2 w-full sm:w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 mb-7 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-600"
+                    >Poruka</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="mx-auto">
+                <a class="text-white px-10 py-4 rounded bg-primary inline-block"
+                  >Posalji poruku</a
                 >
-                  EMAIL
-                </h2>
-                <a class="text-indigo-500 leading-relaxed">example@email.com</a>
-                <h2
-                  class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4"
-                >
-                  TELEFON
-                </h2>
-                <p class="leading-relaxed">123-456-7890</p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-primary py-9">
           <div
-            class="lg:w1/2 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+            class="container grid md:grid-cols-3 text-center text-white gap-6"
           >
-            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-              KONTAKT
-            </h2>
-            <p class="leading-relaxed mb-5">
-              Kontaktirajte nas putem forme i mi cemo se potruditi da vam
-              odgovorimo u najbrzem mogucem roku
-            </p>
-            <div class="relative mb-4">
-              <label for="name" class="leading-7 text-sm">Ime</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            <div>
+              <img
+                class="mb-3 mx-auto"
+                style="width: 50px"
+                src="assets/images/mail.svg"
+                alt="email"
               />
+              <p>example@email.com</p>
             </div>
-            <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            <div>
+              <img
+                class="mb-3 mx-auto"
+                style="width: 50px"
+                src="assets/images/phone.svg"
+                alt="telefon"
               />
+              <p>123-456-789</p>
             </div>
-            <div class="relative mb-4">
-              <label for="message" class="leading-7 text-sm">Poruka</label>
-              <textarea
-                id="message"
-                name="message"
-                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              ></textarea>
+            <div>
+              <img
+                class="mb-3 mx-auto"
+                style="width: 50px"
+                src="assets/images/location.svg"
+                alt="lokacija"
+              />
+              <p class="text-2xl"></p>
+              <p>Pošta 11050, Ustanička 182, Belgrade</p>
             </div>
-            <button
-              class="text-white bg-gray-300 border-0 py-2 px-6 focus:outline-none hover:bg-gray-500 rounded text-lg"
-            >
-              Posalji
-            </button>
           </div>
         </div>
       </section>

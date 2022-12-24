@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O nama</title>
+    <meta
+      name="description"
+      content="Naše usluge obuhvataju redovno i periodično čišćenje i
+    održavanje higijene poslovnih prostora, hotela, restorana,
+    fitness centara, stambenih zgrada i drugih objekata, održavanje
+    zelenih površina kao i zimsko održavanje na teritoriji Beograda."
+    />
+    <title>Top glanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link href="../dist/output.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header
@@ -16,116 +30,135 @@
       "
     >
       <div
-        class="container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        style="height: 80px"
+        class="container flex flex-wrap justify-between items-center h-full"
       >
-        <div class="w-20">
-          <img src="assets/images/logo.svg" />
+        <div>
+          <a href="index.html"
+            ><img src="assets/images/logo.svg" alt="top glanc logo"
+          /></a>
         </div>
+
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          class="hidden md:flex md:ml-auto items-center text-base justify-center"
         >
-          <a class="px-6 py-7 hover:text-gray-900 font-medium" href="index.html"
+          <a
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
+            href="index.html"
             >Početna</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="o-nama.html"
             >O nama</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="usluge.html"
             >Usluge</a
           >
           <a
-            class="px-6 py-7 hover:text-gray-900 font-medium"
+            class="sm:mx-6 sm:my-7 hover:text-gray-900 font-medium"
             href="kontakt.html"
             >Kontakt</a
           >
         </nav>
+
+        <button
+          id="navigation-toggler"
+          class="menu md:hidden"
+          onclick="toggleNavigation(this)"
+          aria-label="prikazi navigaciju"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
       </div>
+
+      <nav
+        style="transition: 0.5s"
+        id="mobile-navigation"
+        class="max-h-0 overflow-hidden flex flex-col items-center text-base justify-center"
+      >
+        <a class="my-4 hover:text-gray-900 font-medium" href="index.html"
+          >Početna</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="o-nama.html"
+          >O nama</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="usluge.html"
+          >Usluge</a
+        >
+        <a class="my-4 hover:text-gray-900 font-medium" href="kontakt.html"
+          >Kontakt</a
+        >
+      </nav>
     </header>
+
     <!-- MAIN -->
     <main>
-      <section class="text-white body-font">
-        <div class="px-5 mx-auto">
-          <div class="flex justify-center -mx-4 -mb-10 text-center">
-            <div
-              class="mb-10 header2 relative body-font bg-gradient-to-t from-primary to-primaryDark"
-            >
-              <img
-                src="assets/images/pexels-karolina-grabowska-4239031.jpg"
-                alt=""
-                class="w-full h-full object-cover absolute mix-blend-soft-light"
-              />
-              <div class="mt-20">
-                <h1
-                  class="title-font text-4xl mt-6 mb-14 animate-[moveInUp_1s_ease-in-out]"
-                >
-                  Ko smo mi i sta Vam nudimo?
-                </h1>
-                <div class="flex flex-col gap-10 mb-14 lg:mb-40">
-                  <div class="flex">
-                    <p
-                      class="leading-relaxed px-2 md:px-10 xl:px-48 text-base md:w-2/3 animate-[moveInLeft_1s_ease-in-out]"
-                    >
-                      Top Glanc je mlada i veoma uspešna specijalizovana
-                      agencija koja se bavi profesionalnim čišćenjem i tekućim
-                      održavanjem higijene kancelarija, poslovnih objekata,
-                      hotela, restorana, hala, banaka, sportskih centara,
-                      stambenih zgrada i višenamenskih objekata. U našoj ponudi
-                      možete naći širok dijapazon usluga koje obavljamo za Vas i
-                      vašu zajednicu.
-                    </p>
-                  </div>
-                  <div class="flex md:justify-end">
-                    <p
-                      class="leading-relaxed px-2 md:px-10 xl:px-48 text-base md:w-2/3 animate-[moveInRight_1s_ease-in-out]"
-                    >
-                      Pored održavanja i čišćenja stambenog i poslovnog prostora
-                      Top Glanc agencija vrši usluge čišćenja kako unutar vaših
-                      zajedničkih prostorija tako i dvorišta. Koristimo opremu i
-                      dezinfekciona sredstva renomiranih proizvođača kako bismo
-                      osigurali da se posao završi ispravno, na vreme i da Vaš
-                      objekat bude savršeno čist. Iskustvo, kvalitet i naša
-                      oprema je ono čime možemo da se pohvalimo, a na Vama je da
-                      se u to i uverite. Kontaktirajte nas i uverite se u naš
-                      kvalitet!
-                    </p>
-                  </div>
-                </div>
-                <a
-                  href="./usluge.html"
-                  class="flex items-end mx-auto text-white bg-gray-400 border-0 py-2 px-5 focus:outline-none hover:bg-gray-600 rounded"
-                >
-                  Pogledaj naše usluge
-                </a>
-              </div>
+      <section class="flex justify-center items-center">
+        <div
+          class="pt-40 pb-5 relative body-font bg-gradient-to-tr from-black/80 flex items-center justify-center w-full"
+        >
+          <img
+            src="assets/images/5.jpg"
+            class="w-full h-full object-cover absolute top-0 left-0 mix-blend-overlay"
+          />
+          <div class="flex flex-col text-left relative container">
+            <div>
+              <h1
+                class="animate-[moveInLeft_1s_ease-in-out] text-3xl font-medium md:text-6xl text-white uppercase"
+              >
+                Usluge
+              </h1>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <!-- FOOTER -->
-    <footer class="body-font">
-      <div
-        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
-      >
-        <div class="w-20">
-          <img src="assets/images/logo.svg" />
+
+      <section>
+        <div class="container">
+          <p class="body- text-lg leading-relaxed mb-5">
+            Generalno čišćenje i održavanje higijene najčešće se obavlja u vreme
+            smena godišnjih doba i podrazumeva veću pažnju i više izdvojenog
+            vremena prilikom čišćenja nego prilikom redovnog čišćenja održavanja
+            higijene.
+          </p>
+
+          <p class="text-lg leading-relaxed">
+            Generalno čišćenje i održavanje higijene najčešće se obavlja u vreme
+            smena godišnjih doba i podrazumeva veću pažnju i više izdvojenog
+            vremena prilikom čišćenja nego prilikom redovnog čišćenja održavanja
+            higijene.
+          </p>
         </div>
-        <p
-          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
-        >
-          © 2020 Tailblocks —
-          <a
-            href="https://twitter.com/knyttneve"
-            class="ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-            >@knyttneve</a
-          >
-        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      style="
+        box-shadow: rgb(50 50 93 / 25%) 0px 20px 40px 20px,
+          rgb(0 0 0 / 10%) 0px 20px 20px 30px;
+      "
+    >
+      <div
+        class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a href="index.html"
+          ><img src="assets/images/logo.svg" alt="top glanc logo"
+        /></a>
+
         <span
           class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
         >
